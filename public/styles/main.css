@@ -123,22 +123,19 @@ li{
 /* forgive */
  #forgive{
 text-align: center;
-background:  linear-gradient(rgba(134, 174, 235, 0.5), rgba(177, 208, 255, 0.5)),  url('../images/forgive.jpg') no-repeat fixed;
-height: 399px !important;
+background: url('../images/forgive-bg.png') no-repeat;
+height: 610px !important;
+background-size: cover;
 /* background-color:#90d7e4; */
-padding-top:50px;
+/* padding-top:50px; */
 }
-#forgive{
-    padding-top:10px;
-    /* height: 90%; */
-    width:100%;
+.forgive{
+    padding-top: 90px;
+    height: 200rem;
     content:''; 
-    transform: skew(0deg, -3deg);
+    transform: skew(0deg, -4deg);
 } 
-#forgive{
-    height: 600px;
-    background-size: cover;
-}
+
 .forgive-border{
     border:5px solid #DCA05A;
     transform: skew(180deg, 3deg);
@@ -158,8 +155,8 @@ padding-top:50px;
 .h4-forgive{
     color:#2F271E;
     position: relative;
-    top:40px;
-    transform: skew(180deg, 3deg);
+    top:130px;
+    /* transform: skew(180deg, 3deg); */
 }
 .give-icon{
     border-radius:200px;
@@ -171,11 +168,11 @@ padding-top:50px;
 }
 .text-p{
     color:#DCA05A;
-    font-size:18px;
+    font-size:20px;
     font-weight: 700;
 }
 .text-2{
-    font-size:13px;
+    font-size:14px;
 }
 /* pray */
 .h4-pray{
@@ -220,13 +217,13 @@ padding-top:50px;
 .last-pray-text{
     text-transform: capitalize;
     color:#9A948E;
-    font-size: 12px;
+    font-size: 10px;
 }
 .trans{
     transition: transform .2s;
     width: 100px;
-    height: 140px;
-    padding-top:20px;
+    height: 135px;
+    padding:5px 6px;
 }
 .trans:hover{
     transform: scale(1.2);
@@ -237,8 +234,8 @@ padding-top:50px;
 /* near */
 
 #near{
-    background: url('../images/Simon.png') no-repeat;
-    height: 600px;
+    background: url('../images/background-near.png') no-repeat;
+    height: 700px;
     background-size: cover;
 }
 .h4-near{
@@ -247,7 +244,8 @@ padding-top:50px;
 }
 .p-near{
     color: #413629;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 /* count */
@@ -265,7 +263,7 @@ padding-top:50px;
 }
 .first-count{
     border:2px;
-    background: #A8CCDE;
+    background: url('../images/block background.png') no-repeat fixed;
     height: 270px;;
     font-size: 10px;
     width:98%;
@@ -274,7 +272,7 @@ padding-top:50px;
     box-shadow: 2px 2px 2px rgb(209, 216, 219);
 }
 .second-p{
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold; 
 }
 
@@ -294,7 +292,7 @@ padding-top:50px;
     color:#413629 !important;
 }
 .first-border{
-    border-right:1px dashed #C4E1EF;
+    border-right:2px dashed #C4E1EF;
 }
 .btn-count:hover{
     background: linear-gradient(#DCA05A, #D4954D, #D4954D) !important;
@@ -326,7 +324,7 @@ padding-top:50px;
     padding:10px 10px;
 }
 .img-donate{
-    margin-left:-30px;
+    margin:10px;
 }
 .text-donate{
     font-size: 10px;
@@ -374,6 +372,14 @@ padding-top:50px;
     border-left:1px solid #D4954D;
 }
  
+#footer {
+    background: url('../images/footer.png')  no-repeat;
+    height:190px;
+    
+    background-size:cover;
+    background-position-y: center center;
+    object-position: center;
+}
 
 
 
@@ -398,14 +404,43 @@ padding-top:50px;
 
 
 
-
+@media (max-width:365px){
+    #forgive{
+        background:  url('../images/forgive-bg.png') no-repeat;
+        height: 900px !important;
+        background-size: cover;
+       
+    } 
+}
 @media (max-width:1024px){
     #forgive{
-        background:  linear-gradient(rgba(134, 174, 235, 0.85), rgba(177, 208, 255, 0.84)),  url('../images/forgive.jpg') no-repeat fixed;
-        height: auto !important;
-        padding-top:30px;
-        padding-bottom:50px;
+        background:  url('../images/forgive-bg.png') no-repeat;
+        height: 450px !important;
+        background-size: cover;
+        padding:auto;
+        visibility: hidden;
     } 
+    .h4-forgive{
+        color:#2F271E;
+        position: relative;
+        top:100px;
+        /* transform: skew(180deg, 3deg); */
+    }
+    .give-icon{
+       margin-top:60px;
+    }
+    .forgive-icon{
+       margin-top:10px;
+    }
+     
+    .text-p{
+        color:#DCA05A;
+        font-size:10px;
+        font-weight: 700;
+    }
+    .text-2{
+        font-size:10px;
+    }
     .forgive-border{
         border:0px solid #DCA05A;
         transform: skew(180deg, 3deg);
@@ -420,7 +455,7 @@ padding-top:50px;
     .p-near{
         font-size: 15px;
     }
-    .first-count{
+    /* .first-count{
         border:2px;
         background: #A8CCDE;
         height: auto;
@@ -429,6 +464,16 @@ padding-top:50px;
         margin:10px 4px;
         padding-bottom:30px;
         box-shadow: 2px 2px 2px rgb(209, 216, 219);
+    } */
+    .second-p{
+        font-size: 10px;
+        font-weight: bold; 
+    }
+    .first-count{
+        border:2px;
+        background: url('../images/block background.png') no-repeat fixed;
+        height: auto;
+         
     }
     .navbar-brand{
         align-items: center;
@@ -447,8 +492,7 @@ padding-top:50px;
     }
     .h4-post{
     font-size: 16px;
-    margin-top:80px !important;
-
+    margin:auto !important;
     }
     .twitter {
         font-family: Muller;
@@ -479,10 +523,11 @@ padding-top:50px;
     .img-donate{
         margin-left:-5px;
         width:50px;
-        padding-top: 20px;
+        padding:auto 10px;
     }
     .img-barcode{
         width:50px;
+        margin: 16px 3px;
     }
     .text-donate{
         font-size: 10px;
@@ -491,15 +536,39 @@ padding-top:50px;
     #count{
         height: auto;
     }
+    .img-donate{
+        width: 40px;
+    }
+    .donate{
+        margin-top: 10px;
+        max-width: auto;
+        height: auto;
+    }
+    .text-donate{
+        font-size: 9px;
+    }
+    .footer-head{
+        font-size: 16px;
+        padding-top:30px;
+        color:#D4954D;
+        text-transform: uppercase;
+        font-family: 'Muller;
+    } 
+    .img-foot{
+        width: 100px;
+        margin-top:70px;
+    }
+    #footer {
+        background: url('../images/footer.png')  no-repeat;
+        height:auto;
+        
+        background-size:cover;
+        background-position-y: center center;
+        object-position: center;
+    }
+
 }
-#footer {
-    background: url('../images/footer.png')  no-repeat;
-    height:190px;
-    
-    background-size:cover;
-    background-position-y: center center;
-    object-position: center;
-}
+
 
 
 
